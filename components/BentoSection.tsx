@@ -34,15 +34,35 @@ const BentoSection: React.FC = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-center items-start group">
-            <div className="bg-blue-50 p-3 rounded-full mb-4 group-hover:bg-blue-100 transition-colors">
-              <span className="material-symbols-outlined text-blue-600 text-2xl">handshake</span>
+          <div className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-md transition-shadow flex flex-col group">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="bg-blue-50 p-2 rounded-lg group-hover:bg-blue-100 transition-colors">
+                <span className="material-symbols-outlined text-blue-600 text-xl">verified_user</span>
+              </div>
+              <h3 className="text-lg font-bold text-deep-blue">Garantia Mi Pana</h3>
             </div>
-            <h3 className="text-xl font-bold text-deep-blue mb-1">0% Intermediários</h3>
-            <p className="text-sm text-slate-500">Conexão P2P direta.</p>
-            <div className="mt-4 flex items-end gap-1">
-              <span className="text-4xl font-black text-deep-blue tracking-tighter">0</span>
-              <span className="text-sm text-slate-400 font-medium mb-1.5">% taxa de gestão</span>
+
+            <div className="space-y-4 flex-1">
+              <div>
+                <div className="flex justify-between text-xs font-bold mb-1">
+                  <span className="text-green-600 flex items-center gap-1"><span className="material-symbols-outlined text-[14px]">nutrition</span> 100% Família</span>
+                  <span className="text-slate-400">Item</span>
+                </div>
+                <div className="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
+                  <div className="bg-green-500 w-full h-full"></div>
+                </div>
+              </div>
+
+              <div>
+                <div className="flex justify-between text-xs font-bold mb-1">
+                  <span className="text-blue-600 flex items-center gap-1"><span className="material-symbols-outlined text-[14px]">security</span> Taxa de Serviço</span>
+                  <span className="text-slate-400">Auditoria</span>
+                </div>
+                <div className="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
+                  <div className="bg-blue-500 w-[15%] h-full rounded-r-lg"></div>
+                </div>
+                <p className="text-[10px] text-slate-400 mt-1 leading-tight">Pequena taxa cobre custos bancários e verificação por IA.</p>
+              </div>
             </div>
           </div>
 

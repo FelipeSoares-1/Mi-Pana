@@ -15,7 +15,7 @@ const FAQsPage: React.FC = () => {
     },
     {
       q: "Existem taxas ocultas?",
-      a: "Nenhuma. A Mi Pana não retém porcentagem das doações humanitárias. Operamos através de subsídios de parceiros tecnológicos e doações voluntárias diretas para a plataforma (opcionais no checkout)."
+      a: "Nenhuma taxa oculta. A transparência é radical. Cobramos uma taxa de serviço (Service Fee) de 5% a 8% que é exibida claramente no checkout. Essa taxa mantém os servidores, a IA de auditoria e as taxas bancárias."
     },
     {
       q: "¿Qualquer pessoa pode se cadastrar como 'Pana' para receber ajuda?",
@@ -23,11 +23,11 @@ const FAQsPage: React.FC = () => {
     },
     {
       q: "¿Qual o modelo de negócio (Sustentabilidade)?",
-      a: "Mi Pana é um Negócio Social (Tech for Good). Cobramos uma taxa de serviço (5-8%) para cobrir custos de gateway e servidores. Também licenciamos nossa tecnologia de auditoria (SaaS White-Label) para grandes organizações."
+      a: "Mi Pana é um Negócio Social (Tech for Good). Nossa receita vem da taxa de serviço nas transações e do licenciamento da nossa tecnologia de auditoria (SaaS White-Label) para grandes organizações."
     },
     {
       q: "¿O dinheiro vai direto para a família?",
-      a: "Sim. 100% do valor do produto vai para a família. A taxa da plataforma cobre apenas a tecnologia que garante a entrega e a auditoria por IA."
+      a: "Sim. 100% do valor do produto vai para a família através da compra no comércio local. A taxa da plataforma é separada e cobre apenas a tecnologia que garante a entrega e a auditoria por IA."
     }
   ];
 

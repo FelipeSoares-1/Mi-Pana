@@ -11,7 +11,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
     <footer className="bg-slate-50 pt-16 pb-8 border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center mb-12 gap-6">
-          <div 
+          <div
             onClick={() => onNavigate('home')}
             className="flex items-center gap-2 cursor-pointer"
           >
@@ -20,9 +20,15 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           </div>
           <div className="flex flex-wrap justify-center gap-8 text-sm font-medium text-slate-500">
             <button onClick={() => onNavigate('about')} className="hover:text-deep-blue transition-colors">Sobre</button>
-            <button onClick={() => onNavigate('impact')} className="hover:text-deep-blue transition-colors">Impacto</button>
             <button onClick={() => onNavigate('faq')} className="hover:text-deep-blue transition-colors">FAQs</button>
-            <a className="hover:text-deep-blue transition-colors" href="#">Manifesto</a>
+          </div>
+          <div className="flex flex-col items-center md:items-end gap-2">
+            <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">Parceiros & Aliados</h4>
+            <div className="flex flex-col items-center md:items-end gap-1 text-sm font-medium text-slate-600">
+              <button onClick={() => onNavigate('partners')} className="hover:text-primary transition-colors">Cadastrar minha ONG</button>
+              <button onClick={() => onNavigate('partners')} className="hover:text-primary transition-colors">Seja um Fornecedor Local</button>
+              <button onClick={() => onNavigate('transparency')} className="hover:text-primary transition-colors">Portal da Transparência</button>
+            </div>
           </div>
           <div className="flex gap-4">
             <a className="w-10 h-10 bg-white border border-slate-200 rounded-full flex items-center justify-center text-slate-400 hover:text-blue-600 hover:border-blue-200 transition-all" href="#">
@@ -37,11 +43,9 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </a>
           </div>
         </div>
-        <div className="border-t border-slate-200 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-400">
-          <p>© 2024 Mi Pana Inc. Todos os direitos reservados.</p>
-          <div className="flex items-center gap-1 mt-2 md:mt-0">
-            Feito com <span className="text-secondary animate-pulse">❤️</span> e IA pela Vibecode
-          </div>
+        <div className="border-t border-slate-200 pt-8 flex flex-col items-center justify-center text-center gap-2 text-xs text-slate-400">
+          <p>© 2026 Mi Pana Inc. Todos os direitos reservados.</p>
+          <p className="font-medium text-slate-500">Usando Inteligência Artificial para reconstruir histórias.</p>
         </div>
       </div>
     </footer>

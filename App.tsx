@@ -6,8 +6,11 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ImpactPage from './pages/ImpactPage';
 import FAQsPage from './pages/FAQsPage';
+import PartnersPage from './pages/PartnersPage';
+import TransparencyPage from './pages/TransparencyPage';
+import LoginPage from './pages/LoginPage';
 
-export type Page = 'home' | 'about' | 'impact' | 'faq';
+export type Page = 'home' | 'about' | 'impact' | 'faq' | 'partners' | 'transparency' | 'login';
 
 const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<Page>('home');
@@ -23,6 +26,9 @@ const App: React.FC = () => {
       case 'about': return <AboutPage />;
       case 'impact': return <ImpactPage />;
       case 'faq': return <FAQsPage />;
+      case 'partners': return <PartnersPage />;
+      case 'transparency': return <TransparencyPage />;
+      case 'login': return <LoginPage onLoginSuccess={() => setCurrentPage('home')} />;
       default: return <HomePage onNavigate={setCurrentPage} />;
     }
   };
@@ -33,7 +39,7 @@ const App: React.FC = () => {
       <main className="flex-grow">
         {renderPage()}
       </main>
-      <Footer onNavigate={setCurrentPage} />
+      {currentPage !== 'login' && <Footer onNavigate={setCurrentPage} />}
     </div>
   );
 };

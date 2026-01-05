@@ -10,7 +10,6 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate }) => {
   const navItems: { label: string; value: Page }[] = [
     { label: 'Sobre', value: 'about' },
-    { label: 'Impacto', value: 'impact' },
     { label: 'FAQs', value: 'faq' },
   ];
 
@@ -18,7 +17,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate }) => {
     <header className="sticky top-0 z-50 w-full glass-panel border-b border-slate-200/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <div 
+          <div
             onClick={() => onNavigate('home')}
             className="flex items-center gap-2 cursor-pointer group"
           >
@@ -27,20 +26,28 @@ const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate }) => {
             </div>
             <span className="text-deep-blue text-xl font-bold tracking-tight">Mi Pana</span>
           </div>
-          
+
           <nav className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
-              <button 
+              <button
                 key={item.value}
                 onClick={() => onNavigate(item.value)}
-                className={`text-sm font-medium transition-colors ${
-                  currentPage === item.value ? 'text-blue-600' : 'text-slate-600 hover:text-deep-blue'
-                }`}
+                className={`text-sm font-medium transition-colors ${currentPage === item.value ? 'text-blue-600' : 'text-slate-600 hover:text-deep-blue'
+                  }`}
               >
                 {item.label}
               </button>
             ))}
-            <button className="bg-primary hover:bg-yellow-400 text-deep-blue text-sm font-bold py-2.5 px-6 rounded-full transition-all shadow-sm hover:shadow-md active:scale-95">
+            <button
+              onClick={() => onNavigate('partners')}
+              className="text-deep-blue hover:text-primary font-medium text-sm py-2.5 px-4 rounded-full border border-slate-200 hover:border-primary transition-all"
+            >
+              Soy ONG / Aliado
+            </button>
+            <button
+              onClick={() => onNavigate('login')}
+              className="bg-primary hover:bg-yellow-400 text-deep-blue text-sm font-bold py-2.5 px-6 rounded-full transition-all shadow-sm hover:shadow-md active:scale-95"
+            >
               Juntar-se
             </button>
           </nav>
