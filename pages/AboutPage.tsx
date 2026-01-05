@@ -6,20 +6,20 @@ const AboutPage: React.FC = () => {
     <div className="animate-in fade-in slide-in-from-bottom-4 duration-700">
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-black text-deep-blue mb-6">Nuestra Misión</h1>
+          <h1 className="text-4xl md:text-6xl font-black text-deep-blue mb-6">O Manifesto</h1>
           <p className="text-xl text-slate-600 leading-relaxed mb-12">
-            Nascemos da necessidade de conectar corações distantes através da tecnologia mais avançada, garantindo que a ajuda humanitária seja direta, digna e livre de intermediários.
+            A diáspora venezuelana representa uma força econômica imensa. Mi Pana transforma a caridade em uma transação auditada, eliminando a desconfiança e a opacidade.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left mt-16">
             <div className="p-8 bg-background-light rounded-2xl border border-slate-100">
               <div className="text-secondary mb-4"><span className="material-symbols-outlined text-4xl">favorite</span></div>
               <h3 className="text-xl font-bold mb-2">Por que "Mi Pana"?</h3>
-              <p className="text-slate-600">Na Venezuela e em grande parte da América Latina, um "pana" é mais que um amigo; é um irmão que você escolhe. Queremos ser esse suporte digital confiável.</p>
+              <p className="text-slate-600">Na Venezuela, um "pana" é mais que um amigo; é um irmão que você escolhe. Nós não pedimos doações; facilitamos a compra de itens específicos.</p>
             </div>
             <div className="p-8 bg-background-light rounded-2xl border border-slate-100">
               <div className="text-blue-600 mb-4"><span className="material-symbols-outlined text-4xl">psychology</span></div>
               <h3 className="text-xl font-bold mb-2">IA para o Bem</h3>
-              <p className="text-slate-600">Utilizamos redes neurais para analisar preços de mercados locais e validar imagens de entrega, eliminando 100% das fraudes e custos operacionais desnecessários.</p>
+              <p className="text-slate-600">Garantimos a entrega através de visão computacional e inteligência artificial (Antigravity), eliminando fraudes e custos operacionais.</p>
             </div>
           </div>
         </div>

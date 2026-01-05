@@ -11,18 +11,18 @@ const BentoSection: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-black text-deep-blue mb-4">Por Que Mi Pana?</h2>
           <p className="text-slate-600 max-w-2xl text-lg">Tecnologia que elimina barreiras e garante que cada centavo chegue ao destino.</p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[minmax(200px,auto)]">
           <div className="md:col-span-2 md:row-span-2 bg-deep-blue rounded-2xl p-8 relative overflow-hidden text-white group">
             <div className="absolute inset-0 bg-gradient-to-br from-blue-900 to-slate-900 z-0"></div>
             <div className="absolute top-0 left-0 w-full h-1 bg-primary/50 shadow-[0_0_20px_rgba(250,204,21,0.6)] animate-[scan_3s_ease-in-out_infinite] z-10 opacity-50"></div>
-            
+
             <div className="relative z-20 flex flex-col h-full justify-between">
               <div>
                 <div className="bg-white/10 w-fit p-3 rounded-xl mb-4 backdrop-blur-sm border border-white/10">
                   <span className="material-symbols-outlined text-primary text-3xl">qr_code_scanner</span>
                 </div>
-                <h3 className="text-2xl md:text-3xl font-bold mb-2">Auditoria Antigravity</h3>
+                <h3 className="text-2xl md:text-3xl font-bold mb-2">Auditoria por IA</h3>
                 <p className="text-slate-300 max-w-md">Nosso sistema proprietário cruza dados em tempo real para verificar a necessidade e a entrega. Nada se perde no caminho.</p>
               </div>
               <div className="mt-8 p-4 bg-white/5 rounded-xl border border-white/10 backdrop-blur-sm flex items-center gap-4">

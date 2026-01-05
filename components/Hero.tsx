@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
     <section className="relative pt-12 pb-20 lg:pt-24 lg:pb-32 overflow-hidden">
       <div className="absolute top-0 right-0 -translate-y-12 translate-x-12 w-96 h-96 bg-primary/10 rounded-full blur-3xl -z-10"></div>
       <div className="absolute bottom-0 left-0 translate-y-12 -translate-x-12 w-96 h-96 bg-secondary/5 rounded-full blur-3xl -z-10"></div>
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           <div className="flex flex-col gap-6 max-w-2xl mx-auto lg:mx-0 text-center lg:text-left">
@@ -17,15 +17,15 @@ const Hero: React.FC = () => {
               <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
               <span className="text-xs font-semibold text-blue-700 tracking-wide uppercase">Tecnologia Humanitária</span>
             </div>
-            
+
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.1] tracking-tight text-deep-blue">
-              Tu gente te necesita. <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800">Conéctate directo.</span>
+              Conexión directa. <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800">Ayuda real.</span>
             </h1>
-            
+
             <p className="text-lg text-slate-600 leading-relaxed">
-              Conectando a la diáspora con su comunidad a través de auditoría IA y entrega directa. Sin intermediarios, solo impacto real y verificable.
+              Conectando a los venezolanos en el mundo con su gente en casa.
             </p>
-            
+
             <div className="w-full max-w-md mx-auto lg:mx-0 mt-2">
               <form className="flex flex-col sm:flex-row gap-3">
                 <div className="relative flex-grow">
@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
                   <input className="w-full pl-10 pr-4 py-3 bg-white border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all shadow-sm" placeholder="Tu mejor email" required type="email" />
                 </div>
                 <button className="bg-primary hover:bg-yellow-400 text-deep-blue font-bold py-3 px-6 rounded-xl shadow-lg shadow-primary/20 transition-all hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap">
-                  Receber Acesso
+                  Soy un Pana en el Exterior
                 </button>
               </form>
               <p className="text-xs text-slate-500 mt-3 flex items-center justify-center lg:justify-start gap-1">
@@ -79,7 +79,7 @@ const Hero: React.FC = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="absolute -right-4 top-1/4 bg-white p-4 rounded-xl shadow-xl border border-slate-100 animate-bounce" style={{ animationDuration: '3s' }}>
               <div className="flex items-center gap-3">
                 <div className="bg-green-100 p-2 rounded-full text-green-600">

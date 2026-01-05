@@ -22,8 +22,12 @@ const FAQsPage: React.FC = () => {
       a: "Não. Para manter a integridade do sistema, os beneficiários passam por uma auditoria social realizada por nossa IA e validadores locais, garantindo que a ajuda chegue a quem realmente enfrenta insegurança alimentar ou médica."
     },
     {
-      q: "¿Como posso me tornar um parceiro logístico ou comercial?",
-      a: "Comerciantes locais podem se inscrever através da aba 'Negócios'. Exigimos documentação legal e capacidade de emitir comprovantes digitais integrados ao nosso app."
+      q: "¿Qual o modelo de negócio (Sustentabilidade)?",
+      a: "Mi Pana é um Negócio Social (Tech for Good). Cobramos uma taxa de serviço (5-8%) para cobrir custos de gateway e servidores. Também licenciamos nossa tecnologia de auditoria (SaaS White-Label) para grandes organizações."
+    },
+    {
+      q: "¿O dinheiro vai direto para a família?",
+      a: "Sim. 100% do valor do produto vai para a família. A taxa da plataforma cobre apenas a tecnologia que garante a entrega e a auditoria por IA."
     }
   ];
 
@@ -37,11 +41,11 @@ const FAQsPage: React.FC = () => {
 
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className={`border rounded-2xl transition-all duration-300 ${openIndex === index ? 'border-primary bg-yellow-50/30' : 'border-slate-100 hover:border-slate-200'}`}
             >
-              <button 
+              <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="w-full text-left p-6 flex justify-between items-center gap-4"
               >
